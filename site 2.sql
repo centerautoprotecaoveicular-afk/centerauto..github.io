@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXISTS db_center_auto;
+USE db_center_auto;
+
+CREATE TABLE IF NOT EXISTS cotacoes (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(150) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    email VARCHAR(100) NOT NULL,
+    tipo_veiculo VARCHAR(20) NOT NULL,
+    ano INT NOT NULL,
+    modelo VARCHAR(100) NOT NULL,
+    data_envio TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
